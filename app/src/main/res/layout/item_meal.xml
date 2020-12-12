@@ -13,13 +13,13 @@
         android:layout_marginEnd="@dimen/margin_8dp"
         app:cardCornerRadius="@dimen/margin_8dp"
         app:cardElevation="@dimen/margin_4dp"
-        android:layout_width="50dp"
+        android:layout_width="80dp"
         android:layout_height="80dp">
 
         <ImageView
             android:scaleType="centerCrop"
             android:id="@+id/iv_photo"
-            android:layout_width="50dp"
+            android:layout_width="80dp"
             android:layout_height="80dp"/>
 
     </androidx.cardview.widget.CardView>

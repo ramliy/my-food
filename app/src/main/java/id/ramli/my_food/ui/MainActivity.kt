@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener, SwipeRefres
         layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         setupRecyclerview()
         adapterMeal.listener = this
+        refresh.isEnabled = false
         getData()
         viewModel.getStatus().observe(this, Observer { t ->
             if (t ?: true) {
@@ -73,6 +74,6 @@ class MainActivity : AppCompatActivity(), RecyclerViewClickListener, SwipeRefres
     }
 
     override fun onRefresh() {
-        getData()
+
     }
 }
